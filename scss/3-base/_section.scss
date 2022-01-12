@@ -1,0 +1,22 @@
+section {
+  background: #f4f5fa;
+  padding: 4rem 0;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    background: #e0e2f0;
+    width: 1px;
+    height: 100%;
+  }
+  &:before {
+    left: 33.333%;
+  }
+  &:after {
+    right: 33.333%;
+  }
+}

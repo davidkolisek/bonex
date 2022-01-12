@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.ly-header {
+  position: fixed;
+  top: 0;
+  background: $c-white;
+  width: 100%;
+  z-index: 99;
+}

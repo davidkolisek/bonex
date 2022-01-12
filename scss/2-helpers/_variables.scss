@@ -1,0 +1,54 @@
+//theme colors
+$warn-color: #d33741;
+
+//primary
+$c-primary-50: #ffe4e4;
+$c-primary-100: #feb7b9;
+$c-primary-200: #f7898d;
+$c-primary-300: #f25a61;
+$c-primary-400: #ec2c33;
+$c-primary-500: #d3131a;
+$c-primary-600: #a50b13;
+$c-primary-700: #76060d;
+$c-primary-800: #490206;
+$c-primary-900: #1f0000;
+
+//secondary
+$c-secondary-50: #eef1fa;
+$c-secondary-100: #d2d4e0;
+$c-secondary-200: #b5b8c8;
+$c-secondary-300: #969bb2;
+$c-secondary-400: #797f9c;
+$c-secondary-500: #606583;
+$c-secondary-600: #4a4f67;
+$c-secondary-700: #353849;
+$c-secondary-800: #1f222d;
+$c-secondary-900: #080b14;
+
+//other colors
+$c-white: #fff;
+$c-black: #000;
+
+//breakpoints
+$bp-phone-small: 576px;
+$bp-phone: 768px;
+$bp-tablet: 991px;
+$bp-laptop: 1199px;
+
+//fonts
+$default-fs: 16px;
+$f-primary: 'Montserrat', sans-serif;
+$f-secondary: 'Source Sans Pro', sans-serif;
+
+//transition
+$primary-transition: all 0.15s ease-in-out;
+
+//box shadow
+$primary-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+//border-radius
+$primary-radius: 5px;
+$secondary-radius: 12px;
+$circle-radius: 999px;
+$zero-radius: 0;

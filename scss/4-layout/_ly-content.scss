@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.ly-content{
+    margin-top: 85px;
+
+  @media(max-width: $bp-tablet){
+    margin-top: 62px;
+  }
+}

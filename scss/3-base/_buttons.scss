@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.main-btn {
+  text-decoration: none;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none;
+  }
+  &-primary {
+    background-color: $c-primary-400;
+    color: $c-white;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $c-primary-300;
+      color: $c-white;
+      @include smooth-transition($primary-transition);
+    }
+
+    &:active {
+      background-color: $c-primary-500;
+      color: $c-white;
+      @include smooth-transition($primary-transition);
+    }
+  }
+
+  &-secondary {
+    background-color: $c-secondary-800;
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+      background-color: $c-secondary-700;
+      @include smooth-transition($primary-transition);
+    }
+
+    &:active {
+      color: $c-white;
+      background-color: $c-secondary-900;
+      @include smooth-transition($primary-transition);
+    }
+  }
+
+  &-ghost {
+    &-primary {
+      background: transparent;
+      border: 1px solid $c-primary-400;
+      color: $c-white;
+
+      &:hover {
+        background-color: $c-primary-300;
+        border-color: $c-primary-400;
+        @include smooth-transition($primary-transition);
+      }
+
+      &:active {
+        background-color: $c-primary-500;
+        border-color: $c-primary-600;
+        @include smooth-transition($primary-transition);
+      }
+    }
+    &-secondary {
+      background: transparent;
+      border: 1px solid $c-secondary-500;
+      color: $c-white;
+
+      &:hover {
+        background-color: $c-secondary-700;
+        border-color: $c-secondary-700;
+        @include smooth-transition($primary-transition);
+      }
+
+      &:active {
+        background-color: $c-secondary-900;
+        border-color: $c-primary-600;
+        @include smooth-transition($primary-transition);
+      }
+    }
+  }
+
+  &-link {
+    &-primary {
+      background: transparent;
+      color: $c-primary-400;
+      &:hover {
+        color: $c-primary-300;
+        text-decoration: none;
+        @include smooth-transition($primary-transition);
+      }
+    }
+    &-secondary {
+      background: transparent;
+      color: $c-secondary-800;
+
+      &:hover {
+        color: $c-secondary-700;
+        text-decoration: none;
+        @include smooth-transition($primary-transition);
+      }
+    }
+  }
+  &.btn-size {
+    width: 100%;
+    &-sm {
+      padding: 0.5rem 1rem;
+    }
+    &-md {
+      padding: 1rem 1.5rem;
+      font-size: .9rem;
+    }
+    &-lg {
+      padding: 1.25rem 2.5rem;
+    }
+  }
+}

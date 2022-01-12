@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+.md-navbar {
+  padding: 1.5rem 0;
+  background: $c-white;
+  @media (max-width: $bp-tablet) {
+    padding: 1rem;
+  }
+  @include smooth-transition($primary-transition);
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .navbar-toggler {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    position: relative;
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $c-primary-400;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      @include smooth-transition($primary-transition);
+      &:nth-child(1) {
+        top: 0;
+        @include smooth-transition($primary-transition);
+      }
+      &:nth-child(2) {
+        top: 10px;
+        @include smooth-transition($primary-transition);
+      }
+      &:nth-child(3) {
+        top: 20px;
+        @include smooth-transition($primary-transition);
+      }
+    }
+  }
+  ul {
+    margin-left: auto;
+    margin-right: unset;
+    &.navbar-nav {
+      position: relative;
+      &:after {
+        content: "";
+        background: $c-secondary-100;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+      }
+    }
+    li {
+      margin-right: 3rem;
+      a {
+        font-size: 1rem;
+        color: $c-secondary-800 !important;
+        font-weight: 500;
+        text-transform: unset;
+        font-family: $f-secondary;
+        border-bottom: 2px solid transparent;
+        padding: 0 0 .15rem!important;
+        &:hover {
+          opacity: 1;
+          border-bottom: 2px solid $c-secondary-800;
+        }
+        i {
+        }
+        &.active {
+        }
+        &:hover {
+        }
+      }
+    }
+  }
+  .nav-contact {
+    margin-left: 2rem;
+    a {
+      text-decoration: none;
+      i {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.scrolling {
+  .md-navbar {
+    padding: 1rem 0;
+    @include smooth-transition($primary-transition);
+
+    @media (max-width: $bp-tablet) {
+      padding: 1rem;
+    }
+  }
+}
+
+//if website is onepage use <a name="hrefId">
+//offset cause fixed navbar
+a[name] {
+  top: -55px; //based on navigation height (breakpoint)
+  position: absolute;
+  @media (max-width: $bp-tablet) {
+    top: -80px; //based on navigation height
+  }
+}

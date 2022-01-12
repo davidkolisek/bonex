@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+a {
+  color: $c-primary-400;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover{
+    color: $c-primary-300;
+  }
+}
