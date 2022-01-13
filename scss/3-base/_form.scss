@@ -7,6 +7,9 @@ form {
         margin-bottom: 1rem;
         &:last-child {
             margin-bottom: 0;
+            @media (max-width: $bp-tablet) {
+              margin-top: 1rem;
+            }
         }
     }
     input,textarea {
@@ -35,5 +38,8 @@ form {
         border: none;
         font-weight: 600;
         padding: 1rem 3rem!important;
+        @media (max-width: $bp-tablet) {
+            width: 100%;
+        }
     }
 }

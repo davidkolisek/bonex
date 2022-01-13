@@ -1,5 +1,5 @@
 //year
-document.getElementById("year").innerHTML = (new Date).getFullYear();
+// document.getElementById("year").innerHTML = (new Date).getFullYear();
 
 //scroll down add class in to body
 document.addEventListener('DOMContentLoaded', function () {
@@ -44,4 +44,3 @@ Array.from(anchorScrools).map((anchorScrool) => {
         collapse.classList.remove('show');
     });
 });
-

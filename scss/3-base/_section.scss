@@ -2,6 +2,10 @@ section {
   background: #f4f5fa;
   padding: 4rem 0;
   position: relative;
+
+  @media (max-width: $bp-phone) {
+    padding: 3rem 0;
+  }
   &:before,
   &:after {
     content: "";
@@ -12,6 +16,9 @@ section {
     background: #e0e2f0;
     width: 1px;
     height: 100%;
+    @media (max-width: $bp-phone) {
+      display: none;
+    }
   }
   &:before {
     left: 33.333%;

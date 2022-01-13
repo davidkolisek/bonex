@@ -3,5 +3,11 @@
 .md-heading{
   &-primary{
     margin-bottom: 6rem;
+    @media (max-width: $bp-tablet) {
+      margin-bottom: 3rem;
+    }
+    @media (max-width: $bp-phone) {
+      margin-bottom: 2rem;
+    }
   }
 }
