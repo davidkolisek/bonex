@@ -795,6 +795,14 @@ ul, ol {
 .md-navbar .nav-contact {
   margin-left: 2rem;
 }
+.md-navbar .nav-contact a {
+  position: relative;
+  top: -1px;
+}
+.md-navbar .nav-contact i {
+  position: relative;
+  top: 1px;
+}
 @media (max-width: 991px) {
   .md-navbar .nav-contact {
     margin: 0;
