@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-sass --watch scss/main.scss:css/main.css
+sass --watch scss/main.scss:css/main.css --style compressed
+
